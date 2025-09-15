@@ -1,0 +1,142 @@
+body {
+  margin: 30px auto;
+}
+.PrCharter {
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+  color: #4f4f4fe7;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  border: 20px solid blue;
+  box-shadow: -5px -5px 10px rgba(44, 58, 64, 0.591);
+}
+.Team {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.timeline {
+  grid-column: 3/4;
+  grid-row: 1 / -1;
+}
+.scopes {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.primary {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.scopes-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.grid-item {
+  background-color: rgb(194, 218, 232);
+  padding: 20px;
+}
+.goal1 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+.g-icon,
+.t-icon,
+.tl-icon {
+  grid-row: 1 / -1;
+  font-size: 20px;
+}
+.tl-icon {
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: rgba(165, 119, 207, 0.489);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.p-icon {
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 50%;
+  border: 1px solid #4f4f4fe7;
+  background-color: #4f4f4fe7;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item-title,
+.Goals .goal1 {
+  border-bottom: 1px solid #4f4f4f50;
+  margin: 0;
+  padding: 15px;
+}
+.timeline .g-content {
+  border-bottom: 2px dashed #24b8d950;
+  padding-bottom: 15px;
+}
+.g-tittle {
+  margin-bottom: 0px;
+}
+.grid-item-title {
+  color: blue;
+}
+
+/* REPONSIVE DÀNH CHO MOBILE  */
+@media screen and (max-width: 992px) {
+  .PrCharter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .scopes {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+  .Team {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+  .primary {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+  .timeline {
+    grid-column: 1/-1;
+    grid-row: 5 / -1;
+  }
+  .goal1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .scopes-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .g-icon,
+  .t-icon,
+  .tl-icon {
+    text-align: center;
+  }
+}
