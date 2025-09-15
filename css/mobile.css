@@ -14,14 +14,11 @@
     padding-left: 0px;
   }
   .certificate-boxes {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
     border-bottom: #d6c08d solid 1px;
   }
   #ctf-border {
     padding-left: 12px;
-    border-left: none;
+    border-left: unset;
   }
   .certificate-content::after {
     display: none;

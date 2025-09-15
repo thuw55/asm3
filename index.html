@@ -19,7 +19,7 @@
       <section id="banner">
         <div class="container-fluid">
           <div class="banner-text text-center text-white">
-            <h1>Nguyễn Văn A</h1>
+            <h1>Đoàn Thị Anh Thư</h1>
             <span>Full Stack Developer</span>
           </div>
         </div>
@@ -27,7 +27,7 @@
       <!-- THANH NAVBAR  -->
       <section id="nav-bar" class="border-bottom">
         <nav
-          class="container d-flex flex-column flex-md-row justify-content-center align-items-center"
+          class="container d-flex flex-column flex-sm-row justify-content-center align-items-center"
         >
           <a class="text-decoration-none text-black" href="#about"
             >Thông tin <i class="icon-user text-primary"></i
@@ -118,84 +118,68 @@
       <!-- GRID THÔNG TIN VỀ HỌC VẤN->KỸ NĂNG  -->
       <div class="grid-thongtin row" id="thongtincoban">
         <!-- Kinh nghiệm làm việc -->
-        <div class="grid1-section col-12 col-sm-4 col-lg-3" id="experience">
+        <div class="grid1-section inf-item col-12 col-sm-4 col-lg-3" id="experience">
           <ul>
             <div class="title">
               <h2 class="section-title thongtinTitle">Kinh nghiệm</h2>
               <h2><i class="ic-toolbox"></i></h2>
-
+            </div>
+              <div class="section-content innf-content hidden">
+                <div class="section-boxes box">
+                  <li class="content">
+                    <strong> Công ty Luật Đại Trí</strong>
+                  </li>
+                  <p class="time timeline">02/2019-06/2019</p>
+                  <p>
+                    <span
+                      >- Soạn thảo văn bản: Thực hiện soạn đơn khiếu nại, đơn ly
+                      hôn, giấy ủy quyền, … </span
+                    ><br />
+                    <span
+                      >- Thực hiện các thủ tục tố tụng: Nộp đơn, hồ sơ tại cơ
+                      quan có thẩm quyền theo sự yêu cầu của giám đốc công
+                      ty.</span
+                    ><br />
+                    <span
+                      >- Lưu trữ hồ sơ: Lưu trữ các loại hồ sơ, văn bản liên
+                      quan đến các vụ việccó tham gia xử lý.</span
+                    ><br />
+                  </p>
+                </div>
+                <div class="section-boxes box">
+                  <li class="content">
+                    <strong>Công ty MISA</strong>
+                  </li>
+                  <p class="time timeline">07/2019-01/2020</p>
+                  <p>
+                    <span>Nhân viên kinh doanh Hóa đơn điện tử</span><br />
+                    <span
+                      >- Tìm kiếm, tiếp cân và tìm hiểu nhu cầu của khách hàng
+                      thông qua điện thoại, zalo, email, trực tiếp, hội
+                      thảo,...<br />
+                      - Tư vấn, giới thiệu và cung cấp về sản phẩm Hóa đơn điện
+                      tử cho khách hàng.<br />
+                      - Thực hiện các thủ tục thanh toán, bàn giao và hướng dẫn
+                      , chăm sóc khách hàng.<br /> </span
+                    ><br />
+                  </p>
+                </div>
+              </div>
               <!-- NÚT VIEW MORE -->
-              <button type="button" id="ViewMore--0" class="hidden viewmore">
-                ▼ VIEW MORE
-              </button>
-              <!-- NÚT VIEW LESS -->
-              <button type="button" id="ViewLess--0" class="hidden viewless">
-                ▲ VIEW LESS
-              </button>
-            </div>
-
-            <div class="section-content innf-content hidden">
-              <div class="section-boxes box">
-                <li class="content">
-                  <strong> Công ty Luật Đại Trí</strong>
-                </li>
-                <p class="time timeline">02/2019-06/2019</p>
-                <p>
-                  <span
-                    >- Soạn thảo văn bản: Thực hiện soạn đơn khiếu nại, đơn ly
-                    hôn, giấy ủy quyền, … </span
-                  ><br />
-                  <span
-                    >- Thực hiện các thủ tục tố tụng: Nộp đơn, hồ sơ tại cơ quan
-                    có thẩm quyền theo sự yêu cầu của giám đốc công ty.</span
-                  ><br />
-                  <span
-                    >- Lưu trữ hồ sơ: Lưu trữ các loại hồ sơ, văn bản liên quan
-                    đến các vụ việccó tham gia xử lý.</span
-                  ><br />
-                </p>
-              </div>
-              <div class="section-boxes box">
-                <li class="content">
-                  <strong>Công ty MISA</strong>
-                </li>
-                <p class="time timeline">07/2019-01/2020</p>
-                <p>
-                  <span>Nhân viên kinh doanh Hóa đơn điện tử</span><br />
-                  <span
-                    >- Tìm kiếm, tiếp cân và tìm hiểu nhu cầu của khách hàng
-                    thông qua điện thoại, zalo, email, trực tiếp, hội
-                    thảo,...<br />
-                    - Tư vấn, giới thiệu và cung cấp về sản phẩm Hóa đơn điện tử
-                    cho khách hàng.<br />
-                    - Thực hiện các thủ tục thanh toán, bàn giao và hướng dẫn ,
-                    chăm sóc khách hàng.<br /> </span
-                  ><br />
-                </p>
-              </div>
-            </div>
+              <button type="button" class="hidden viewbtn">▼ VIEW MORE</button>
           </ul>
         </div>
         <!-- Học vấn -->
-        <div class="grid1-section col-12 col-sm-4 col-lg-3" id="education">
+        <div class="grid1-section inf-item col-12 col-sm-4 col-lg-3" id="education">
           <ul>
             <div class="title">
               <h2 class="section-title thongtinTitle">Học vấn</h2>
               <h2><i class="ic-pencil"></i></h2>
-              <!-- NÚT VIEW MORE -->
-              <button type="button" id="ViewMore--1" class="hidden viewmore">
-                ▼ VIEW MORE
-              </button>
-              <!-- NÚT VIEW LESS -->
-              <button type="button" id="ViewLess--1" class="hidden viewless">
-                ▲ VIEW LESS
-              </button>
             </div>
-
             <div class="section-content innf-content hidden">
               <div class="section-boxes box">
                 <li class="content">
-                  <strong>Cử nhân: Đại học Luật - Đại học Huế</strong>
+                   <strong>Cử nhân: Đại học Luật - Đại học Huế</strong>
                 </li>
                 <p class="time timeline">09/2015-05/2019</p>
                 <p>
@@ -208,31 +192,23 @@
                   <strong>FUNIX</strong>
                 </li>
                 <p class="time timeline">07/2025-02/2026</p>
-                <p>
-                  Tốt nghiệp chứng chỉ Web Full-stack<br />
-                  GPA:9/10
+                <p>                    Tốt nghiệp chứng chỉ Web Full-stack<br />
+                   GPA:9/10
                 </p>
               </div>
             </div>
+            <!-- NÚT VIEW MORE -->
+            <button type="button" class="hidden viewbtn">▼ VIEW MORE</button>
           </ul>
         </div>
         <!-- Hoạt động -->
-        <div class="grid1-section col-12 col-sm-4 col-lg-3" id="activity">
+        <div class="grid1-section inf-item col-12 col-sm-4 col-lg-3" id="activity">
           <ul>
             <div class="title">
               <h2 class="section-title thongtinTitle">Hoạt động</h2>
               <h2><i class="ic-toolbox"></i></h2>
-              <!-- NÚT VIEW MORE -->
-              <button type="button" id="ViewMore--2" class="hidden viewmore">
-                ▼ VIEW MORE
-              </button>
-              <!-- NÚT VIEW LESS -->
-              <button type="button" id="ViewLess--2" class="hidden viewless">
-                ▲ VIEW LESS
-              </button>
             </div>
-
-            <div class="section-content innf-content hidden">
+              <div class="section-content innf-content hidden">
               <div class="section-boxes">
                 <li class="content">
                   <strong>FPT Edu Hackathon 2019</strong><br />
@@ -249,25 +225,21 @@
                 </li>
                 <p class="time notimeline">08/2016-08/2017</p>
                 <p><span>Trưởng ban chuyên môn</span><br /></p>
-              </div>
+            </div>
+              <!-- NÚT VIEW MORE -->
+              <button type="button" class="hidden viewbtn">
+                ▼ VIEW MORE
+              </button>
+              </button>
             </div>
           </ul>
         </div>
         <!-- Sở thích -->
-        <div class="grid1-section col-12 col-sm-4 col-lg-3" id="hobby">
+        <div class="grid1-section inf-item col-12 col-sm-4 col-lg-3" id="hobby">
           <div class="title">
             <h2 class="section-title thongtinTitle">Sở thích</h2>
             <h2><i class="ic-telescope"></i></h2>
-            <!-- NÚT VIEW MORE -->
-            <button type="button" id="ViewMore--3" class="hidden viewmore">
-              ▼ VIEW MORE
-            </button>
-            <!-- NÚT VIEW LESS -->
-            <button type="button" id="ViewLess--3" class="hidden viewless">
-              ▲ VIEW LESS
-            </button>
           </div>
-
           <div class="section-content innf-content hidden">
             <div id="icon-boxes">
               <div class="icon-boxes"><i class="ic-megaphone"></i></div>
@@ -282,50 +254,39 @@
               <div>Nấu ăn</div>
             </div>
           </div>
+          <!-- NÚT VIEW MORE -->
+          <button type="button" class="hidden viewbtn">
+            ▼ VIEW MORE
+          </button> 
         </div>
         <!-- NGÔN NGỮ  -->
-        <div class="grid1-section col-12 col-sm-4 col-lg-3" id="lang">
+        <div class="grid1-section inf-item col-12 col-sm-4 col-lg-3" id="lang">
           <div class="title">
             <h2 class="section-title thongtinTitle">Ngôn ngữ</h2>
             <h2><i class="ic-mic"></i></h2>
-            <!-- NÚT VIEW MORE -->
-            <button
-              type="button"
-              id="ViewMore--4"
-              class="hidden ViewMore--4 viewmore"
-            >
-              ▼ VIEW MORE
-            </button>
-            <!-- NÚT VIEW LESS -->
-            <button type="button" id="ViewLess--4" class="hidden viewless">
-              ▲ VIEW LESS
-            </button>
           </div>
-
-          <div class="section-content innf-content hidden">
+            <div class="section-content innf-content hidden">
             <p>Tiếng Nhật-JLPT N3</p>
             <p class="thangdiem">
               <span class="tdxanh"></span><span class="tdxanh"></span
               ><span class="tdxam"></span>
             </p>
           </div>
+            <!-- NÚT VIEW MORE -->
+            <button
+              type="button"
+              class="hidden viewbtn"
+            >
+              ▼ VIEW MORE
+            </button>
         </div>
         <!-- Kỹ năng -->
-        <div class="grid1-section col-12 col-sm-4 col-lg-3" id="skill">
+        <div class="grid1-section inf-item col-12 col-sm-4 col-lg-3" id="skill">
           <div class="title">
             <h2 class="section-title thongtinTitle">Kỹ năng</h2>
             <h2><i class="ic-tools-2"></i></h2>
-            <!-- NÚT VIEW MORE -->
-            <button type="button" id="ViewMore--5" class="hidden viewmore">
-              ▼ VIEW MORE
-            </button>
-            <!-- NÚT VIEW LESS -->
-            <button type="button" id="ViewLess--5" class="hidden viewless">
-              ▲ VIEW LESS
-            </button>
           </div>
-
-          <div class="section-content innf-content hidden">
+            <div class="section-content innf-content hidden">
             <div class="section-boxes">
               <p class="time notimeline">
                 <strong>HTML/CSS :</strong
@@ -367,19 +328,23 @@
               </p>
             </div>
           </div>
+            <!-- NÚT VIEW MORE -->
+            <button type="button" class="hidden viewbtn">
+              ▼ VIEW MORE
+            </button>
         </div>
       </div>
       <!-- Chứng chỉ - Giải thưởng -->
       <div class="section" id="certificate">
         <h2 class="certificate-title">Chứng chỉ - Giải thưởng</h2>
         <div class="certificate-content row">
-          <div class="certificate-boxes col-12 col-sm-6">
+          <div class="certificate-boxes col-12 col-sm-6 d-flex flex-column flex-lg-row ">
             <img
               class="certificate-img"
               src="images/Cert_DBI.png"
               alt="Chứng chỉ lập trình web"
-              width="160"
-              height="120"
+              width="auto"
+              height="160"
             />
             <div>
               <p class="content">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</p>
@@ -389,13 +354,13 @@
               </p>
             </div>
           </div>
-          <div class="certificate-boxes col-12 col-sm-6" id="ctf-border">
+          <div class="certificate-boxes col-12 col-sm-6  d-flex flex-column flex-lg-row justify-content-center align-items-center" id="ctf-border">
             <img
               class="certificate-img"
               src="images/Cert_PRF.png"
               alt="Chứng chỉ lập trình javacript"
-              width="160"
-              height="120"
+              width="auto"
+              height="160"
             />
             <div>
               <p class="content">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</p>
@@ -405,13 +370,13 @@
               </p>
             </div>
           </div>
-          <div class="certificate-boxes col-12 col-sm-6">
+          <div class="certificate-boxes col-12 col-sm-6 d-flex flex-column flex-lg-row">
             <img
               class="certificate-img"
               src="images/Cert_WEB.png"
               alt="Chứng chỉ thiết kế database"
-              width="160"
-              height="120"
+              width="auto"
+              height="160"
             />
             <div>
               <p class="content">CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</p>

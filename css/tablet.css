@@ -12,19 +12,6 @@
   #certificate h2 {
     padding-left: 0px;
   }
-  .certificate-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 160px 160px;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-  }
-  .certificate-boxes {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
   /* DỰ ÁN */
   .project-title {
     padding-left: 20px;

@@ -31,37 +31,35 @@ enterEmail.addEventListener("mouseleave", function () {
 
 // CÁC TRƯỜNGN HỢP XẢY RA KHI NHẬP EMAIL
 Submit.addEventListener("click", function () {
-  // Nếu nhập đúng email thì
-  if (enterEmail.value === email) {
+  if (validateEmail(enterEmail.value)) {
+    // Nếu nhập đúng dạng email thì
     // HIỂN THỊ THÔNG TIN
     info.classList.remove("hidden");
     infoEmail.classList.add("hidden");
-    // tại dòng này e đang để nhập đúng email mới mở được
-  } else if (validateEmail(enterEmail.value)) {
-    //dòng này e để đúng dạng nhưng k đúng email nên báo sai
-    warning("Email đã nhập không chính xác. Vui lòng kiểm tra lại.");
+  } else if (enterEmail.value.length === 0) {
+    //Chưa nhập email thì cảnh báo:
+    warning("Vui lòng nhập email.");
   } else {
-    //dòng này báo sai dạng ạ
-    warning("Địa chỉ email không hợp lệ.");
+    //email sai định dạng thì báo:
+    warning("Sai định dạng email");
   }
 });
 
 // ẨN CÁC THÔNG TIN KINH NGHIỆM -> SỞ THÍCH
 //  CHỌN ELEMENT
-const thongtinTitles = document.querySelectorAll(".title");
+const viewBtns = document.querySelectorAll(".viewbtn");
+const thongtinTitles = document.querySelectorAll(".inf-item");
 const sectionContents = document.querySelectorAll(".innf-content");
 
 for (let i = 0; i < thongtinTitles.length; i++) {
   thongtinTitles[`${i}`].addEventListener("mouseenter", function () {
-    document.getElementById(`ViewMore--${i}`).classList.remove("hidden");
+    viewBtns[i].classList.remove("hidden");
   });
   thongtinTitles[`${i}`].addEventListener("click", function () {
-    document.getElementById(`ViewMore--${i}`).classList.toggle("hidden");
-    document.getElementById(`ViewLess--${i}`).classList.toggle("hidden");
+    viewBtns[i].textContent = " ▼ VIEW LESS";
     sectionContents[`${i}`].classList.toggle("hidden");
   });
   thongtinTitles[`${i}`].addEventListener("mouseleave", function () {
-    document.getElementById(`ViewMore--${i}`).classList.add("hidden");
-    document.getElementById(`ViewLess--${i}`).classList.add("hidden");
+    viewBtns[i].classList.add("hidden");
   });
 }

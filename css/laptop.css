@@ -60,6 +60,7 @@ img {
   border: 10px solid white;
   width: 150px;
   height: 150px;
+  box-shadow: -5px 5px 10px rgba(44, 58, 64, 0.591);
 }
 
 /* GRID MỤC TIÊU VÀ THÔNG TIN CÁ NHÂN  */
@@ -105,8 +106,10 @@ img {
   font-size: 20px;
 }
 /* ĐỊNH DẠNG CHO Ô SỞ THÍCH  */
-#hobby {
-  padding-left: 25px;
+#hobby,
+#skill,
+#lang {
+  padding-left: 40px;
 }
 #icon-boxes {
   display: flex;
@@ -133,9 +136,6 @@ img {
   gap: 7px;
 }
 /* ĐỊNH DẠNG CHO Ô NGÔN NGỮ  */
-#lang {
-  padding-left: 25px;
-}
 .thangdiem span {
   display: inline-block;
   width: 40px;
@@ -148,14 +148,10 @@ img {
 .tdxam {
   background-color: #4f4f4f26;
 }
-/* ĐỊNH DẠNG CHO Ô KÝ NĂNG  */
-#skill {
-  padding-left: 25px;
-}
 /* ĐỊNH DẠNG CHO Ô CHỨNG CHỈ-GIẢI THƯỞNG  */
 #certificate {
   background-color: #4f4f4f1d;
-  padding: 40px 100px;
+  padding: 40px 5%;
 }
 #certificate h2 {
   padding-left: 20px;
@@ -163,7 +159,7 @@ img {
 .certificate-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 160px 160px;
+  grid-template-rows: auto auto;
   align-items: center;
   justify-items: center;
   position: relative;
@@ -178,7 +174,7 @@ img {
   border-left: #d6c08d solid 1px;
 }
 .certificate-content::after {
-  width: 1000px;
+  width: 100%;
   height: 1px;
   display: inline-block;
   content: " ";
@@ -307,8 +303,7 @@ img {
 
 /* THÊM NÚT VVIEWMORE, VIEWLESS,...  */
 
-.viewmore,
-.viewless {
+.viewbtn {
   border-radius: 30px 30px;
   border-color: rgba(234, 255, 0, 0.32);
   background: rgba(234, 255, 0, 0.32);
@@ -318,7 +313,6 @@ img {
 }
 .title {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  text-align: center;
-  align-items: center;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
 }
