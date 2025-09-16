@@ -3,13 +3,6 @@ body {
 }
 .PrCharter {
   box-sizing: border-box;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
   width: 100%;
   font-family: arial, sans-serif, tahoma;
   font-size: 10pt;
@@ -21,6 +14,16 @@ body {
   gap: 20px;
   border: 20px solid blue;
   box-shadow: -5px -5px 10px rgba(44, 58, 64, 0.591);
+}
+.back-btn {
+  background-color: blue;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.back-btn a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
 }
 .Team {
   grid-column: 2/3;
@@ -58,7 +61,7 @@ body {
 .t-icon,
 .tl-icon {
   grid-row: 1 / -1;
-  font-size: 20px;
+  font-size: 40px;
 }
 .tl-icon {
   font-size: 20px;
@@ -74,14 +77,14 @@ body {
   margin-right: 10px;
 }
 .p-icon {
-  font-size: 20px;
+  font-size: 25px;
   color: aliceblue;
   border-radius: 50%;
   border: 1px solid #4f4f4fe7;
   background-color: #4f4f4fe7;
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   align-items: center;
   justify-content: center;
 }
